@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Profesional | Pensamiento Computacional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#inicio">Mi Portafolio</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      
+      <button id="btn-tema" class="btn-secundario" type="button">Modo oscuro</button>
+    </nav>
+  </header>
+
+  <main>
+   
+    <section id="inicio" class="hero">
+      <!-- El texto del saludo se genera automáticamente desde script.js según la hora -->
+      <p id="saludo" class="saludo-destacado">¡Hola! Bienvenido a mi portafolio</p>
+      <h1>Estudiante de Programación y Pensamiento Computacional</h1>
+      <p class="subtitulo">Portafolio de proyectos académicos, desarrollo de software y aplicaciones web.</p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn-principal">Ver mis proyectos</a>
+        <a href="#contacto" class="btn-secundario">Contáctame</a>
+      </div>
+    </section>
+
+   
+    <section id="sobre-mi" class="seccion">
+      <div class="contenedor-sobre-mi">
+        <img src="img/avatar.png" alt="Foto de perfil del estudiante" class="avatar">
+        <div class="texto-presentacion">
+          <h2>Sobre mí</h2>
+          <p>
+            ¡Hola! Soy Matias un estudiante de 4.º Medio del Colegio El Belloto. Me apasiona la tecnología,
+            la resolución lógica de problemas y el desarrollo de software. A lo largo de la asignatura
+            de Pensamiento Computacional y Programación he desarrollado proyectos en Java, JavaScript,
+            HTML y CSS.
+          </p>
+          
+          <p id="texto-extra" class="oculto">
+            Durante este año he fortalecido habilidades en algoritmos, diseño modular de interfaces web,
+            depuración de errores y buenas prácticas con Git y GitHub. En el futuro me gustaría seguir
+            estudiando carreras relacionadas con la ingeniería informática y el desarrollo web profesional.
+          </p>
+         
+          <button id="btn-ver-mas" class="btn-outline" type="button">Ver más</button>
+        </div>
+      </div>
+    </section>
+
+    
+      <h2>Mis Proyectos</h2>
+      <p class="seccion-descripcion">
+        Una muestra de los programas y sitios web que he construido durante el curso.
+      </p>
+
+      <div class="grilla-proyectos">
+
+       
+        <article class="card-proyecto">
+          <img src="img/proyecto-wireframe.png" alt="Captura del proyecto Wireframe en JavaScript">
+          <div class="card-cuerpo">
+            <h3>Página interactiva según Wireframe</h3>
+            <p class="descripcion-proyecto">
+              Página web desarrollada a partir de un wireframe de diseño. Resuelve la visualización
+              ordenada de contenidos interactivos mediante eventos en el DOM. Con este trabajo aprendí
+              a estructurar código HTML semántico, aplicar estilos CSS y manipular elementos con JavaScript.
+            </p>
+            <p class="tecnologias"><strong>Tecnologías:</strong> HTML5, CSS3, JavaScript, DOM, Flexbox</p>
+            <a href="https://github.com/tu-usuario/proyecto-wireframe" target="_blank" rel="noopener noreferrer" class="enlace-proyecto">
+              Ver código en GitHub &rarr;
+            </a>
+          </div>
+        </article>
+<!-- Proyecto 2: Proyecto en Java (Obligatorio - 1er semestre) -->
+        <article class="card-proyecto">
+          <img src="img/proyecto-bebidas.png" alt="Captura del programa Máquina de bebidas en Java">
+          <div class="card-cuerpo">
+            <h3>Máquina de bebidas en Java</h3>
+            <p class="descripcion-proyecto">
+              Aplicación de consola en Java que simula la compra en una máquina expendedora automática.
+              Resuelve el control de stock de productos, ingreso de monedas y cálculo exacto de vuelto.
+              Aprendí a utilizar variables, condicionales if/else, ciclos while y la clase Scanner.
+            </p>
+            <p class="tecnologias"><strong>Tecnologías:</strong> Java, Scanner, Ciclos, Arreglos, Git</p>
+            <a href="https://github.com/tu-usuario/proyecto-bebidas-java" target="_blank" rel="noopener noreferrer" class="enlace-proyecto">
+              Ver código en GitHub &rarr;
+            </a>
+          </div>
+        </article>
+
+       
+        <article class="card-proyecto">
+          <img src="img/proyecto-eleccion.png" alt="Captura del juego Adivina el Número">
+          <div class="card-cuerpo">
+            <h3>Minijuego: Adivina el Número</h3>
+            <p class="descripcion-proyecto">
+              Juego donde el usuario debe adivinar un número secreto entre 1 y 10 generado aleatoriamente.
+              Resuelve la validación de intentos y muestra mensajes de pistas (mayor o menor).
+              Aprendí a utilizar Math.random(), eventos de teclado y condicionales para lógica de juego.
+            </p>
+            <p class="tecnologias"><strong>Tecnologías:</strong> JavaScript, HTML5, CSS3, Math.random</p>
+            
+           
+            <div class="zona-juego">
+              <label for="numero-ingresado">Prueba jugar aquí (1 al 10):</label>
+              <div class="juego-controles">
+                <input type="number" id="numero-ingresado" min="1" max="10" placeholder="Ej: 5">
+                <button id="btn-adivinar" type="button" class="btn-outline">Probar</button>
+              </div>
+              <p id="resultado-juego" class="mensaje-juego"></p>
+            </div>
+
+            <a href="https://github.com/tu-usuario/juego-adivina-numero" target="_blank" rel="noopener noreferrer" class="enlace-proyecto">
+              Ver código en GitHub &rarr;
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    
+    <section id="contacto" class="seccion seccion-contacto">
+      <h2>Contacto</h2>
+      <p class="seccion-descripcion">
+        ¿Tienes alguna consulta sobre mis proyectos o te gustaría colaborar?
+      </p>
+
+      <div class="contenedor-contacto">
+        <form class="formulario-contacto" action="#" method="get" onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Formulario de demostración.');">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+          </div>
+          <div class="campo">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="tu-correo@ejemplo.com">
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+          </div>
+          <button type="submit" class="btn-principal">Enviar mensaje</button>
+        </form>
+
+        <div class="enlaces-contacto">
+          <h3>Mis enlaces</h3>
+          <p>Puedes revisar mis repositorios y avances en mi perfil de GitHub:</p>
+          <p>
+            <a href="https://github.com/Kido702" 
+              Visitar mi GitHub
+            </a>
+          </p>
+          
+      </div>
+    </section>
+  </main>
+
+  
+  <button id="https://github.com/Kido702" title="Volver al inicio" aria-label="Volver al inicio">↑</button>
+
+  <footer>
+    <div class="footer-contenido">
+      <p>&copy; 2026 - Portafolio Pensamiento Computacional y Programación</p>
+      <p>Colegio El Belloto · 4.º Medio</p>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
